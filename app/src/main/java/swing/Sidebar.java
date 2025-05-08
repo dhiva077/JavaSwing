@@ -9,6 +9,7 @@ public class Sidebar extends JPanel {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         setBackground(Color.decode("#BBAEA5"));
         setPreferredSize(new Dimension(200, 0));
+        setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
         add(Box.createVerticalStrut(8));
 
