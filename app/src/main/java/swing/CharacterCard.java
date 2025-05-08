@@ -15,11 +15,11 @@ public class CharacterCard extends JPanel {
         ));
         setPreferredSize(new Dimension(200, 250));
 
-        // Load image from resources folder
+        
         JLabel imageLabel;
         ImageIcon icon = null;
         try {
-            // Construct the path to the image within the resources directory.
+            
             InputStream imgStream = getClass().getClassLoader().getResourceAsStream(imageName);
 
 
@@ -47,11 +47,11 @@ public class CharacterCard extends JPanel {
         JLabel nameLabel = new JLabel(characterName, SwingConstants.CENTER);
         nameLabel.setFont(new Font("SansSerif", Font.BOLD, 14));
 
-        JPanel namePanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 10)); // Add a JPanel for nameLabel
-        namePanel.setBackground(Color.decode("#DBD4CE")); // Ensure the background is white
+        JPanel namePanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 0, 10)); 
+        namePanel.setBackground(Color.decode("#DBD4CE")); 
         namePanel.add(nameLabel);
 
         add(imageLabel, BorderLayout.CENTER);
-        add(namePanel, BorderLayout.SOUTH); // Use the JPanel instead of adding nameLabel directly;
+        add(namePanel, BorderLayout.SOUTH); 
     }
 }

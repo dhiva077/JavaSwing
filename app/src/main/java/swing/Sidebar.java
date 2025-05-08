@@ -14,13 +14,13 @@ public class Sidebar extends JPanel {
         add(Box.createVerticalStrut(8));
 
         String[] buttonLabels = {
-                "Home", "Characters", "Tier List", "Memory of Chaos",
-                "Light Cones", "Relics", "Guides", "Tools"
+                "Home", "Funfact", "Most Popular Cat", "Cat Care and Food",
+                "Funny Poses", "Cat Myths", "Cat Body Language", "Photo Gallery"
         };
 
         for (String label : buttonLabels) {
             add(new SidebarButton(label));
-            add(Box.createVerticalStrut(8)); // Jarak vertikal
+            add(Box.createVerticalStrut(8));
         }
 
         add(Box.createVerticalGlue());

@@ -9,17 +9,17 @@ public class SidebarButton extends JButton {
 
     public SidebarButton(String text) {
         super(text);
-        setAlignmentX(Component.CENTER_ALIGNMENT); // Agar tetap di tengah secara vertikal dalam layout Y_AXIS
-        setMaximumSize(new Dimension(Integer.MAX_VALUE, 40)); // Lebar maksimal
-        setMinimumSize(new Dimension(30, 40)); // Lebar minimal
-        setPreferredSize(new Dimension(180, 40)); // Lebar preferred (akan dipengaruhi oleh layout)
-        setBackground(Color.decode("#DBD4CE")); // Warna latar belakang tombol
+        setAlignmentX(Component.CENTER_ALIGNMENT); 
+        setMaximumSize(new Dimension(Integer.MAX_VALUE, 40)); 
+        setMinimumSize(new Dimension(30, 40)); 
+        setPreferredSize(new Dimension(180, 40)); 
+        setBackground(Color.decode("#DBD4CE")); 
         setForeground(Color.BLACK);
         setFocusPainted(false);
         setBorderPainted(false);
         setFont(new Font("SansSerif", Font.PLAIN, 14));
         setOpaque(true);
-        setHorizontalAlignment(SwingConstants.CENTER); // Teks di tengah horizontal
+        setHorizontalAlignment(SwingConstants.CENTER); 
 
         addMouseListener(new MouseAdapter() {
             private Color originalBackground = getBackground();
@@ -27,7 +27,7 @@ public class SidebarButton extends JButton {
             @Override
             public void mouseEntered(MouseEvent e) {
                 originalBackground = getBackground();
-                setBackground(Color.decode("#DDD3D2")); // Efek hover
+                setBackground(Color.decode("#DDD3D2"));
             }
 
             @Override

@@ -16,7 +16,7 @@ public class Navbar extends JPanel {
         title.setBorder(BorderFactory.createEmptyBorder(0, 20, 0, 0));
 
         JPanel buttonPanel = new JPanel();
-        buttonPanel.setOpaque(false); // Transparent background
+        buttonPanel.setOpaque(false);
         buttonPanel.setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 10));
 
         JButton discordButton = new JButton("Paw-ty di Discord!");

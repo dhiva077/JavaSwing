@@ -14,7 +14,7 @@ public class CharacterScrollPanel extends JPanel {
         contentPanel.setBackground(Color.decode("#BBAEA5"));
 
 
-        // Nama karakter dan file image (harus sama persis dengan nama file di folder resources)
+        
         String[][] characters = {
             {"Ragdoll", "Ragdoll.jpg"},
             {"BSH Cinnamon", "BSH Cinnamon.jpg"},
