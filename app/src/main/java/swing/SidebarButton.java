@@ -27,7 +27,7 @@ public class SidebarButton extends JButton {
             @Override
             public void mouseEntered(MouseEvent e) {
                 originalBackground = getBackground();
-                setBackground(Color.decode("#DDD3D2"));
+                setBackground(Color.decode("#FFDFD3"));
             }
 
             @Override

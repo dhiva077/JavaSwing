@@ -38,4 +38,3 @@ public class Navbar extends JPanel {
         add(buttonPanel, BorderLayout.EAST);
     }
 }
-
